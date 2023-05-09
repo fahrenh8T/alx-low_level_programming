@@ -12,8 +12,6 @@
  *
  * Return: 0 if success, exit when code error
 */
-
-
 int main(int argc, char *argv[])
 {
 	int fdes_source, fdes_sent, data_read, data_written, close_source, close_sent;
