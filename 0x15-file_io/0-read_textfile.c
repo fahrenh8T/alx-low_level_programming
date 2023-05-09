@@ -4,12 +4,12 @@
  * @filename: name of the file to be read
  * @letters: number of letters it should read and print
  *
- * Returns: actual number of letters it should read and print
+ * Return: actual number of letters it should read and print
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *file = fopen(filename, "r");
-	char *data = (char*) malloc(letters * sizeof(char));
+	char *data = (char *) malloc(letters * sizeof(char));
 	ssize_t data_read = fread(data, sizeof(char), letters, file);
 	ssize_t data_written = write(STDOUT_FILENO, data, data_read);
 
