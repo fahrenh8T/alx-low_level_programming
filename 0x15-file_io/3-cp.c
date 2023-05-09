@@ -52,16 +52,10 @@ int main(int argc, char *argv[])
 
 	close_source = close(fdes_source);
 	close_sent = close(fdes_sent);
-	if (close_source == -1)
+	 if (close_source == -1 || close_sent == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdes_source);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", close_source == -1 ? fdes_source : fdes_sent);
 		exit(100);
 	}
-	else if (close_sent == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdes_sent);
-		exit(100);
-	}
-
 	return (0);
 }
