@@ -15,12 +15,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	 file_des = open(filename, O_RDWR);
-	 if (file_des == -1)
-	 	return (0);
-	 
-	 data = (char *) malloc(letters * sizeof(char));
-	 if (data == NULL)
+	file_des = open(filename, O_RDWR);
+	if (file_des == -1)
+		return (0);
+
+	data = (char *) malloc(letters * sizeof(char));
+	if (data == NULL)
 		return (0);
 
 	data_read = read(file_des, data, letters);
