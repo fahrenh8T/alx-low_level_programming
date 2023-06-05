@@ -7,15 +7,15 @@
 */
 int main(void)
 {
-int num = 48;
+	int num = 48;
 
-while (num <= 57)
-{
-putchar(num);
-num++;
-}
+	while (num <= 57)
+	{
+		putchar(num);
+		num++;
+	}
 
-putchar('\n');
+	putchar('\n');
 
-return (0);
+	return (0);
 }

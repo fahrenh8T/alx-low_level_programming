@@ -7,14 +7,14 @@
 */
 int main(void)
 {
-int x;
+	int x;
 
-for (x = 'z'; x >= 'a'; x--)
-{
-putchar(x);
-}
+	for (x = 'z'; x >= 'a'; x--)
+	{
+		putchar(x);
+	}
 
-putchar('\n');
+	putchar('\n');
 
-return (0);
+	return (0);
 }
