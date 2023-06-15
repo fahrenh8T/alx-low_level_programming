@@ -34,3 +34,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	close(fdes);
 	return (1);
 }
+
+void funct_copy(int file_from, int file_to, char *source_name, char *sent_name)
+{
+}
