@@ -3,7 +3,8 @@
   * _binary_search - searches for a value in a sorted array of integers
   *                  using binary search.
   * @array: pointer to the first element of the array to search
-  * @size: number of elements in array
+  * @left: The starting index of the [sub]array to search.
+  * @right: The ending index of the [sub]array to search.
   * @value: value to search in
   *
   * Return: index where value is located. Not present or NULL return -1

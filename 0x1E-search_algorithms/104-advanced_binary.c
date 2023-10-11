@@ -1,7 +1,7 @@
 #include "search_algos.h"
 /**
  * rec_search - searches for a value in an array of integers using
- * 				the Binary search algorithm
+ *				the Binary search algorithm
  * @array: pointer to the first element of the array to search
  * @size: number of elements in array
  * @value: value to search in
@@ -44,7 +44,7 @@ int search(int *array, size_t size, int value)
 
 /**
  * advanced_binary - calls to rec_search to return the index of the
- * 					 number
+ *					number
  * @array: pointer to the first element of the array to search
  * @size: number of elements in array
  * @value: value to search in
