@@ -12,7 +12,7 @@
 int interpolation_search(int *array, size_t size, int value)
 {
 	size_t postn, low, high;
-	double intp_factor;
+	double intp_f;
 
 	if (array == NULL)
 		return (-1);
@@ -22,8 +22,8 @@ int interpolation_search(int *array, size_t size, int value)
 
 	while (size)
 	{
-		intp_factor = (double)(high - low) / (array[high] - array[low]) * (value - array[low]);
-		postn = (size_t)(low + intp_factor);
+		intp_f = (double)(high - low) / (array[high] - array[low]) * (value - array[low]);
+		postn = (size_t)(low + intp_f);
 		printf("Value checked array[%d]", (int)postn);
 
 		if (postn >= size)
